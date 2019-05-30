@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_left_8dp"
+        android:layout_marginRight="@dimen/margin_right_8dp"
+        android:background="#FFFFFF"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="1dp"
+            >
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:text="@string/size" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/pizza_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="1dp">
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:text="@string/pizza_type" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/pizza_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="1dp">
+
+            <TextView
+                style="@style/TextViewTitle"
+                android:text="@string/cheese_type" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/pizza_cheese_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_margin="1dp">
+            <TextView
+                style="@style/TextViewTitle"
+                android:text="@string/sauce" />
+
+            <org.angmarch.views.NiceSpinner
+                android:id="@+id/sauce_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="@string/topping"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textStyle="bold"
+            android:textColor="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/checkbox_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/onion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="onion"
+                android:text="@string/onion" />
+
+            <CheckBox
+                android:id="@+id/pepperoni"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="pepperoni"
+                android:text="@string/pepperoni" />
+
+            <CheckBox
+                android:id="@+id/green_pepper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="green_pepper"
+                android:text="@string/green_pepper" />
+
+            <CheckBox
+                android:id="@+id/anchovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tag="anchovies"
+                android:text="@string/anchovies" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_cost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="right"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:text="@string/total_cost"
+            />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/submit"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/submit_button_bg"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Pizza Maker</string>
+    <string name="size">Size*</string>
+    <string name="pizza_type">Pizza Type*</string>
+    <string name="cheese_type">Cheese Type*</string>
+    <string name="sauce">Sauce*</string>
+    <string name="topping">Topping</string>
+    <string name="onion">Onion</string>
+    <string name="pepperoni">Pepperoni</string>
+    <string name="green_pepper">Green Pepper</string>
+    <string name="anchovies">Anchovies</string>
+    <string name="total_cost">Total cost:</string>
+    <string name="submit">Submit</string>
+
+    <string-array name="topping">
+        <item>Onion</item>
+        <item>Pepperoni</item>
+        <item>Green Pepper</item>
+    </string-array>
+
+</resources>
